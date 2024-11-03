@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <!-- <NuxtRouteAnnouncer /> -->
-    <!-- <NuxtWelcome /> -->
-    <h1 class="bg-red-500 text-4xl font-bold">Hello nuxt 3</h1>
-    <button class="bg-sky-500 border-none">dads</button>
+  <div class="bg-slate-200">
+    <NuxtLayout>
+      <header>
+        <ul>
+          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/events" class="mx-2">events</NuxtLink>
+        </ul>
+      </header>
+
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
